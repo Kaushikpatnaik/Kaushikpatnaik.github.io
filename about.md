@@ -1,15 +1,19 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I am a CS graduate, specializing in Machine Learning, currently working as a Data Scientist at [Element Analytics](https://www.elementanalytics.com/).
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
+One of my self challenges for increasing my knowledge and expertise in machine learning is to build and share my paper readings/notes, personal projects and hacks. This blog aims to be a repository containing such material. I am challenging myself to weekly paper summary blog posts and monthly project updates. 
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+This blog will contain material around:
+* Sequence Learning (including time series)
+* Reinforcement Learning
+* NLP
+* Unsupervised Learning
+
+All opinions on this site are mine alone.
+
+This site was created using Jekyll and github pages, using the minima theme. To learn more about them visit:{% include icon-github.html username="jekyll" %}[jekyll](https://github.com/jekyll/jekyll)
