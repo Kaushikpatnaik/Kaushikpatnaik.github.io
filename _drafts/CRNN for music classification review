@@ -1,0 +1,45 @@
+# Convolutional Recurrent Neural Networks for Music Classfication
+
+1. What problem is the paper solving. 
+
+Music classification using a combination of convolutional and recurrent neural networks called CRNN. The music classification task takes in
+a short song clip as an input (30-60s) and tries to predict the tags associated with it. 
+
+In this paper they use the Million Song dataset provided by last.fm (available here). They try to predict the top-50 tags associated with each clip.
+The tags can be genres (rock, pop), moods (sad, happy),instruments (female, vocalist) and eras (60s-00s). 
+
+2. What is the general idea they are using to solve the problem 
+
+the authors 
+
+3.What kind of results are they getting 
+
+
+4. What previous work are they building on 
+
+
+5. What is the model and the experiments they are running. Does it match the setup of the problem. Any obvious drawbacks 
+
+
+6. What are some of the key proofs and assumptions on the data. Any drawbacks from real world application of the model. 
+
+
+
+7. Starting with raw data, what steps does one have to do to recreate the results.
+
+
+Overall Impressions:
+Not a new type of model, not a new problem area. The paper tries to validate a new type of model in this problem area through carefully controlled experiments.
+The idea of CRNNs is pretty valid - you want convolution to capture some local features and RNNs to go after global features? However if you do convolution across time
+they you do tend to capture a weighted average over a small time range. 
+
+Another important note is that - for sound signals there does seem to be a preference for mel-spectograms. The input to the models tend to be matrices with time and frequency as dimensions. 
+
+The dimensions along which the 
+
+depth
+layer paramters
+layer types
+BN vs No BN
+Dropout
+L1 and L2
