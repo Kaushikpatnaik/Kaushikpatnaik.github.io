@@ -28,11 +28,11 @@ The paper tests four architectures combining 1d convolutions, 2d convolutions, f
 
 All convolutional layers use batch normalization and exponential learning units (ELUs). 
 
-![Model]({{ site.url }}/_assets/music_rnn_models.png)
+![Model]({{ site.url }}/assets/music_rnn_models.png)
 
 The models are scaled by controlling the number of parameters to be 0.1M, 0.2M, 0.5M, 1M and 3M with 2% tolerance. The models are kept of similar depth (to enable models to use features of same depth/hierarchy while changing the number of such features available).
 
-![Model Size]({{ site.url }}/_assets/music_rnn_results.png)
+![Model Size]({{ site.url }}/assets/music_rnn_results.png)
 
 However, within each model there are several ways to change number of parameters (increase num of features vs decreasing max pooling size, increasing size of RNN hidden units vs increasing conv features etc). These minor details have been omitted in the paper. 
 
@@ -44,7 +44,7 @@ Songs are trimmed to 30-60s preview clips. The audio signals are trimmed to 29 s
 
 On a single dataset from Last.fm, their proposed CRNN model beats state of the art results using 0.5 million parameters. The CRNN model consistently performs better than other alternatives such as k2c2, k2c1, and k1c2, given the same number of parameters. k2c2 follows in performance, with minimal increase in AUC scores(1st digit of decimal). k2c2 however is slightly better than the remaining two models(unit difference). Given that the run time for a single epoch of the CRNN model is 2x -4x of the k2c2 model, it seems ideal to start off with k2c2 model for most cases. 
 
-![Results]({{ site.url }}/_assets/music_rnn_auc.png)
+![Results]({{site.url}}/assets/music_rnn_auc.png)
 
 5. What previous work are they building on
 

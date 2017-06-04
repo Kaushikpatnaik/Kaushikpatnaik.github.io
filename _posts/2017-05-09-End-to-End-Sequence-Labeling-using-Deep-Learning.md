@@ -42,7 +42,7 @@ There have been papers using CNN-BLSTMs (Chiu et. al, Named Entity Recognition w
 
 Pre-trained character and word embeddings. The character embeddings that represent a word are gathered together(with padding if required). A convolution filter, post dropout, is applied with kernel size of 3 chars and 30 feature maps. A max pooling layer across the characters then constructs the character representation of the word. 
 
-![CNN Layer]({{ site.url }}/_assets/CNN-LSTM-CRF-CNN-Embedding.png)
+![CNN Layer]({{ site.url }}/assets/CNN-LSTM-CRF-CNN-Embedding.png)
 
 The above character representation is then concated together with pre-trained word embeddings like Glove, Google Word2Vec. 
 
@@ -51,7 +51,7 @@ Thus a sentence now represents a sequence of word level embeddings, which can be
 Finally the output of the Bi-directional LSTM layer at each step is inputted to the CRF layer post dropout.
 
 The model architecture is shown below
-![Model Architecture]({{ site.url }}/_assets/CNN-LSTM-CRF-Overall-model.png)
+![Model Architecture]({{ site.url }}/assets/CNN-LSTM-CRF-Overall-model.png)
 
 They train the model using simple SGD with momentum of 0.9 and batch size of 10. They lower the learning rate based on epochs as lr_t = lr_0/(1+tau*t), with tau = 0.5 and t being the epoch being completed. Gradient clipping of 5.0 is applied(not sure if just for BLSTMs, or for all). 
 
@@ -73,9 +73,9 @@ e) Generalization ability by looking at OOV vs Non-OOV words
 
 ## 6.What kind of results are they getting. Any drawbacks?
 
-![NER Score]({{ site.url }}/_assets/CNN-LSTM-CRF-NER-Score.png)
-![POS Score]({{ site.url }}/_assets/CNN-LSTM-CRF-POS-Score.png)
-![Comparison of Models]({{ site.url }}/_assets/CNN-LSTM-CRF-Comaprison of models.png)
+![NER Score]({{ site.url }}/assets/CNN-LSTM-CRF-NER-Score.png)
+![POS Score]({{ site.url }}/assets/CNN-LSTM-CRF-POS-Score.png)
+![Comparison of Models]({{ site.url }}/assets/CNN-LSTM-CRF-Comaprison of models.png)
 
 Their results are on par with previous SOTA models which use a combination of linguistic features and deep learning to achieve good performance. Their main advantage is the truly end to end system from raw text to predicted labels. 
 
