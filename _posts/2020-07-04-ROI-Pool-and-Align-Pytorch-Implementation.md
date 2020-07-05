@@ -13,7 +13,7 @@ All two stage object detectors have a couple of major components:
 * Region of Interest Pooling and Align: Extracting features from backbone based on RPN proposals
 * Detection Network: Prediction of final bounding boxes and classes based on mult-task loss. Mask R-CNN also predicts masks via an additional head using ROI Align output.
 
-![Two_Stage_Object_Detection]({{ site.url }}/assets/two_stage_object_detection)
+![Two_Stage_Object_Detection]({{ site.url }}/assets/two_stage_object_detection.png)
 
 Region of Interest (ROI) Pooling and Alignment connect the two stages of detection by extracting features using RPN proposals and Backbone network. First let's look at the region proposal network.
 
