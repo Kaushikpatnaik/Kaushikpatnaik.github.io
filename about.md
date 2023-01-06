@@ -4,9 +4,11 @@ title: About Me
 permalink: /about/
 ---
 
-I am a CS graduate, specializing in Machine Learning, currently working as a Data Scientist at [Orbital Insight](https://www.orbitalinsight.com/) on Computer Vision. Previously, I spent two years at [Element Analytics](https://www.elementanalytics.com/) working on Industrial IoT problems like time to failure, forecasting etc.
+Surfing the latent space of models. Interested in AI and deep learning. 
 
-One of my self challenges for increasing knowledge and expertise in machine learning is to build and share my paper readings/notes, and personal projects. This blog aims to be a repository containing such material. I am challenging myself to post weekly. This is not necessarily a deep learning focussed blog, although now a days most of ML is taken to be that way.
+Two things I want to pursue in my career:
+1) Work on LLMs that are are coherent, consistent, factual and deeply personalized
+2) Work on agents that interact and continously learn
 
 All opinions on this site are mine alone.
 
